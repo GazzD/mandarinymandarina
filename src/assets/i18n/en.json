@@ -54,7 +54,13 @@
       "third": "You wonder why we are able to do both? It is because all of our classes have steps to follow!",
       "forth": "Calligraphy is difficult, boring and impossible? Come and listen our attravtive stories for each character and you will have a good time!"
     }
-
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "button": "Send"
   },
   "footer": {
     "footer": "Footer"

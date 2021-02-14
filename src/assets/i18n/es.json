@@ -55,6 +55,13 @@
         "forth": "La caligrafía es dificíl, aburrida y imposible? Ven a escuchar nuestros cuentos atractivos para cada caracteres y pasarás bien!"
     }
   },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "button": "Enviar"
+  },
   "footer": {
     "footer": "Futer"
   }
