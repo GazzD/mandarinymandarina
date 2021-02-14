@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "classes": "Clases",
+    "teachers": "Profesores",
+    "resources": "Recursos",
+    "contact": "Contacto",
+    "en": "Inglés",
+    "es": "Español",
+    "campus": "Campus"
+  },
+  "home": {
+    "content-1": {
+      "title": "¡Bienvenido a MandarinyMandarina!",
+      "description": "¿Estás cansado de cambiar una y otra vez el material porque cambia el profesor? ¿Ya no puedes aguantar más porque siempre aprendes algo repetitivo? ¿Ya no puedes perder más tiempo dando vueltas y sin avanzar nada? ¿Quieres encontrar una metodología sistemática con un material completo y adaptado a tu nivel? ¡VEN A APRENDER CHINO CON NOSOTROS!",
+      "button": "¡EMPEZAR YA!"
+    },
+    "children-course": {
+      "title": "Cursos de chino para niños",
+      "content": "Tenemos cursos para niños a partir de los 4 años, con o sin intención de preparar exámenes oficiales. El objetivo fundamental es convertir el estudio del chino en una gran diversión."
+    },
+    "adult-course": {
+      "title": "Cursos de chino para adultos",
+      "content": "Clases divertidas con nuestros profesores nativos con metodología adaptada tanto para principiantes como para aquellos que quieran preparar el HSK y el HSKK."
+    },
+    "intensive-course": {
+      "title": "Cursos INTENSIVOS de chino para exámenes YCT, HSK y HSKK.",
+      "content": "Calidad asegurada y efectiva. ¡No te lo puedes perder!"
+    },
+    "culture-course": {
+      "title": "Cursos de cultura china",
+      "content": "No tes puede llegar a aburrir ante tantas opciones: la medicina tradicional china, la historia, la caligrafía y todas las costumbres exóticas de una cultura milenaria."
+    },
+    "teachers": {
+      "hengli": {
+        "user": "hengli",
+        "title": "Hola, me llamo Heng Li.",
+        "description": "Llevo casi 10 años dedicados a la enseñanza del chino y a la edición de materiales para su aprendizaje, tanto para niños como para adultos. Una cosa te puedo asegurar: ¡aprender chino no es tan difícil como te imaginas! Solo es una cuestión de persistencia sistemática como haría al aprender cualquier otro idioma o como adelgazar, hay que buscar ejercicios adecuados y seguir una dieta. Pues igual es mi metodología para el chino. ¡Todo lo que te pido es tu determinación y seguir mis instrucciones!"
+      },
+      "ningdan": {
+        "user": "ningdan",
+        "title": "Hola, me llamo Ningdan.",
+        "description": "Soy profesora chino con experiencia de enseñanza de 8 años. Soy responsable, paciente, con entusiasmo por mi trabajo, con interés por seguir ampliando mi formación, con una preocupación por motivar a mis alumnos, buscando siempre lo mejor para ellos y su futuro."
+      },
+      "jinglin": {
+        "user": "jinglin",
+        "title": "Hola, me llamo Jing Lin.",
+        "description": "Si quieres aprender chino, mi consejo es: despacito, poquito a poco. Empiezas un poquitín hoy, continuas un pelín mañana. Empezaremos con los elementos más sencillos y básicos si eres un principiante. Mis clases están diseñadas a ser efectivas y divertidas, probablemente ni siquiera te darás cuenta de que estás estudiando. Dos o tres horas relajadas a la semana y dentro de tres meses te sorprendes de las conversaciones que puedes manejar. Próxima vez cuando alguien dice: Chino es el idioma más difícil del mundo, le probarás lo equivocado con tu mandarín fluido y exótico. Estos es el encanto de poquito a poco, esto es el encanto de seguir aprendiendo."
+      }
+    },
+    "faqs": [
+      { "question": "", "answer": "" }
+    ]
+  },
+  "footer": {
+    "footer": "Futer"
+  }
+}

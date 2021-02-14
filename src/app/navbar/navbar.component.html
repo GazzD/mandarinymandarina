@@ -1,0 +1,35 @@
+<!-- Header Starts -->
+<header class="site-header position-relative">
+  <div class="container">
+      <div class="row justify-content-center align-items-center position-relative">
+          <div class="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
+            <!-- Brand Logo -->
+            <div class="brand-logo">
+                <a href=""><img src="assets/image/main-logo.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-sm-8 col-lg-2 col-xl-2 d-none d-sm-block order-lg-3">
+            <div class="header-btns justify-content-end">
+                <a href="#" class="btn btn-link">{{ "navbar.campus" | translate }}</a>
+            </div>
+          </div>
+          <!-- Menu Block -->
+          <div class="col-sm-1 col-6 col-lg-6 col-xl-6 offset-lg-2  position-static order-lg-2">
+              <div class="main-navigation">
+                  <ul class="main-menu">
+                      <li class="menu-item has-dropdown">
+                        <a href="#features">{{ "navbar.classes" | translate }}</a>
+                      </li>
+                      <li class="menu-item"><a href="#">{{ "navbar.teachers" | translate }}</a></li>
+                      <li class="menu-item"><a href="#">{{ "navbar.resources" | translate }}</a></li>
+                      <li class="menu-item"><a href="#">{{ "navbar.contact" | translate }}</a></li>
+                      <li class="menu-item">  <img class="flag-icon" src="assets/image/es-flag.png" (click)="switchLang('es')"></li>
+                      <li class="menu-item">  <img class="flag-icon" src="assets/image/en-flag.png" (click)="switchLang('en')"></li>
+                  </ul>
+              </div>
+              <div class="mobile-menu"></div>
+          </div>
+      </div>
+  </div>
+  <div class="shape-holder header-shape" data-aos="fade-down" data-aos-once="true"><img src="assets/image/header-shape.svg" alt=""></div>
+</header>

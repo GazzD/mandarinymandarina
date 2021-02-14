@@ -1,0 +1,331 @@
+<div class="site-wrapper">
+
+  <app-navbar></app-navbar>
+
+  <!-- Hero-Area -->
+  <div class="hero-area position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-7 col-12">
+          <div class="hero-content">
+            <h1>{{ "home.content-1.title" | translate }}</h1>
+            <p>{{ "home.content-1.description" | translate }}</p>
+            <div class="hero-btn"><a href="#" class="btn btn--orange btn--hover-shine">{{ "home.content-1.button" | translate }}</a></div>
+            <!-- <div class="rating">
+              <div class="icon">
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="text">Trused by over 4,332 students</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-5 col-12">
+          <div class="hero-media">
+            <img src="src/assets/image/hero.png" alt="">
+            <a class="video-play-trigger" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class="icon icon-triangle-right-17-2"></i></a>
+            <div class="media-shape animate-spin"><img src="src/assets/image/media-shape.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shape-holder hero-shape" data-aos="fade-right" data-aos-once="true"><img src="src/assets/image/hero-orange-shape.svg" alt=""></div>
+  </div>
+
+  <!-- Course section -->
+  <section class="course-section position-relative">
+    <div class="shape-holder">
+      <img src="./assets/image/section-2-shape-bg.svg" alt="">
+    </div>
+    <div class="shape-holder" data-aos="zoom-in"  data-aos-once="true">
+      <img src="./assets/image/section-2-shape.svg" alt="">
+    </div>
+    <div class="shape-holder course-shape-3" data-aos="zoom-in-left" data-aos-once="true">
+      <img src="./assets/image/course-yelloow-svg.svg" alt="">
+    </div>
+    <div class="container pt-lg--85">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title section-black">
+            <h2>Clases personalizadas</h2>
+            <p>Aprender con mucho gusto</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion course-accordion" id="accordionExample" >
+        <div class="card course-card"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+          <div class="card-header" id="headingOne">
+            <div class="row">
+                <div class="col-xl-6 col-lg-7">
+                  <div class="acc-left-content d-flex">
+                    <div class="acc-icon">
+                      <img src="./assets/image/course-acc-icon.svg" alt="">
+                    </div>
+                    <div class="acc-head-contents">
+                      <h3>{{ "home.children-course.title" | translate }}</h3>
+                      <p>{{ "home.children-course.content" | translate }}</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="200">
+          <div class="card-header" id="heading2">
+            <div class="row">
+                <div class="col-lg-6">
+                  <div class="acc-left-content d-flex">
+                    <div class="acc-icon">
+                      <img src="./assets/image/course-acc-icon.svg" alt="">
+                    </div>
+                    <div class="acc-head-contents">
+                      <h3>{{ "home.adult-course.title" | translate }}</h3>
+                      <p>{{ "home.adult-course.content" | translate }}</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+
+          <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+            <div class="card-body">
+                <ul class="course-inline-list">
+                  <li><a href=""><i class="icon icon-check-2"></i>Persona Creation</a></li>
+                  <li><a href=""><i class="icon icon-check-2"></i>Why Persona is Important</a></li>
+                  <li><a href=""><i class="icon icon-check-2"></i>Data-Driven Personas</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="400">
+          <div class="card-header" id="heading3">
+            <div class="row">
+                <div class="col-lg-6">
+                  <div class="acc-left-content d-flex">
+                    <div class="acc-icon">
+                      <img src="./assets/image/course-acc-icon.svg" alt="">
+                    </div>
+                    <div class="acc-head-contents">
+                      <h3>{{ "home.intensive-course.title" | translate }}</h3>
+                      <p>{{ "home.intensive-course.content" | translate }}</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="600">
+          <div class="card-header" id="heading4">
+            <div class="row">
+                <div class="col-lg-6">
+                  <div class="acc-left-content d-flex">
+                    <div class="acc-icon">
+                      <img src="./assets/image/course-acc-icon.svg" alt="">
+                    </div>
+                    <div class="acc-head-contents">
+                      <h3>{{ "home.culture-course.title" | translate }}</h3>
+                      <p>{{ "home.culture-course.content" | translate }}</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aurthor Starts -->
+  <div class="aurthor-section" *ngFor="let teacher of teachers">
+    <div class="container">
+      <div class="row  spacing-bottom mb--10">
+        <div class=" col-lg-5 col-md-4" data-aos="zoom-in-right"  data-aos-once="true" data-aos-delay="55" data-aos-duration="1500">
+          <div class="aurthor-image">
+            <img src="{{ teacher.img }}" alt="{{ teacher.user }}">
+          </div>
+        </div>
+
+        <div class="col-lg-6 offset-md-1 col-md-6" data-aos="zoom-in-left"  data-aos-once="true" data-aos-delay="55" data-aos-duration="1500">
+          <div class="aurthor-content">
+            <span class="account">@{{ teacher.user }}</span>
+            <h2>{{ "home.teachers."+teacher.user+".title" | translate }}</h2>
+            <p>{{ "home.teachers."+teacher.user+".description" | translate }}</p>
+          </div>
+        </div>
+      </div>
+      <span class="section-devider"></span>
+    </div>
+  </div>
+
+  <!-- Testimonial Starts -->
+  <section class="testimonial-section position-relative">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-xl-6">
+            <h2>Don’t believe me. Listen what’s my students are</h2>
+          </div>
+        </div>
+        <div class="testimonial-slider-wrapper">
+          <div class="slider-btns"></div>
+          <div class="testimonial-slider">
+            <div class="single-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" *ngFor="let testimonial of testimonials">
+              <div class="testimonial-card">
+                <div class="image">
+                  <img src="{{ testimonial.img }}" alt="{{ testimonial.name }}">
+                </div>
+                <div class="content">
+                  <h4>{{ testimonial.name }}</h4>
+                  <span class="d-block">{{ testimonial.description }}</span>
+                  <!-- <a class="video-play-trigger" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class="icon icon-triangle-right-17-2"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="shape-holder testimonial-shape" data-aos="zoom-in-left" data-aos-once="true"><img src="./assets/image/testimonial-shape.svg" alt=""></div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section position-relative">
+    <div class="container">
+      <!-- faq accordionExample -->
+      <div class="faq-accordion">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="section-title"><h2>Frequently Asked Questions</h2></div>
+
+            <div class="accordion faq-accordion space-db--10" id="accordionExample2" *ngFor="let faq of faqs">
+              <div class="single-faq mb--10" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <button class="faq-head" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                  <h2>Will I get full access to the course after purchasing?</h2>
+                  <i class="icon icon-minimal-down"></i>
+                </button>
+
+                <div id="faq1" class="collapse show" aria-labelledby="faq-heading1" data-parent="#accordionExample2">
+                  <div class="faq-body">
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="single-faq mb--10" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200" data-aos-once="true">
+                <button class="faq-head collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="true" aria-controls="faq2">
+                  <h2>Do you give money back guarantee?</h2>
+                  <i class="icon icon-minimal-down"></i>
+                </button>
+
+                <div id="faq2" class="collapse" aria-labelledby="faq-heading2" data-parent="#accordionExample2">
+                  <div class="faq-body">
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-guarantee">
+        <div class="row">
+          <div class="col-lg-5 col-md-7 offset-lg-1" data-aos="zoom-in-right"  data-aos-once="true" data-aos-delay="55" data-aos-duration="1500">
+            <div class="content">
+              <h2>Get <span class="text--primary fs-inherit">30 Days</span> Money Back Guarantee.</h2>
+              <p>Create custom landing pages with Shades that convert more visitors than any website, no coding required.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-5 offset-lg-1" data-aos="zoom-in-left"  data-aos-once="true" data-aos-delay="55" data-aos-duration="1500">
+            <div class="flex-all-center h-100">
+              <img src="./assets/image/guarnatee.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shape-holder faq-shape" data-aos="zoom-in-right" data-aos-once="true"><img src="./assets/image/faq-shape.svg" alt=""></div>
+  </section>
+
+
+
+  <!-- Footer Section -->
+  <div class="footer-section position-relative">
+    <div class="container margin-decrese">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-8 col-xl-7" data-aos="flip-down" data-aos-delay="55" data-aos-duration="2000" data-aos-once="true">
+              <div class="footer-content">
+                  <!-- <span class="title-small-text">Contact</span> -->
+                  <h2>Contact</h2>
+                  <form action="">
+                    <div class="form-group">
+                      <div style="padding: 0.5em 1em;">
+                        <input type="text" class="form-control" placeholder="Nombre" />
+                      </div>
+                      <div style="padding: 0.5em 1em;">
+                        <input type="text" class="form-control" placeholder="Email" />
+                      </div>
+                      <div style="padding: 0.5em 1em;">
+                        <textarea class="form-control" placeholder="Message"></textarea>
+                      </div>
+                      <div class="footer-btn"><button class="btn btn--orange btn--hover-shine">Enviar</button></div>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+          <span class="section-devider mt--130"></span>
+        <div class="row mt--70">
+            <div class="col-lg-4 col-xl-4 col-sm-6 col-margin">
+                <span class="ft-title-sm">Help menu</span>
+                <div class="row">
+                  <div class="col-lg-5 col-4">
+                      <ul class="footer-list">
+                          <li><a href="">About</a></li>
+                          <li><a href="">Features</a></li>
+                          <li><a href="">Works</a></li>
+                          <li><a href="">Career</a></li>
+                        </ul>
+                  </div>
+
+                  <div class="col-lg-7 col-8">
+                      <ul class="footer-list">
+                          <li><a href="">Contact</a></li>
+                          <li><a href="">Help &amp; Support</a></li>
+                          <li><a href="">Privacy Policy</a></li>
+                          <li><a href="">Terms &amp; Conditions</a></li>
+                        </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-sm-6 col-margin">
+                <span class="ft-title-sm">Product</span>
+                <ul class="footer-list">
+                  <li><a href="">Essential Landing Page</a></li>
+                  <li><a href="">Alpha Dashboard Pro</a></li>
+                  <li><a href="">Karnel Admin Dashboard</a></li>
+                  <li><a href="">Gray UI Kit</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-5 col-xl-5 col-margin">
+              <div class="ft-newsletter-box">
+                  <span class="ft-title-sm">Subscribe to our newsletter</span>
+                  <p>Subscribe to get lastest offers, news and events announcements. No spam in your inbox.</p>
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Enter your email address">
+                      <button class="submit-btn"><i class="icon icon-tail-right"></i></button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="shape-holder footer-shape-1" data-aos="zoom-in-left" data-aos-once="true"><img src="./assets/image/cta-shape.svg" alt=""></div>
+    <div class="shape-holder footer-shape-2" data-aos="zoom-in-right" data-aos-once="true"><img src="./assets/image/footer-shape.svg" alt=""></div>
+  </div>
+</div>

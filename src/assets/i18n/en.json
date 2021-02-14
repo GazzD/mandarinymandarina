@@ -1,0 +1,54 @@
+{
+  "navbar": {
+    "classes": "Classes",
+    "teachers": "Teachers",
+    "resources": "Resources",
+    "contact": "Contact",
+    "en": "English",
+    "es": "Spanish",
+    "campus": "Campus"
+  },
+  "home": {
+    "content-1": {
+      "title": "Welcome to MandarinyMandarina!",
+      "description": "Are you tired of changing the material over and over again because the teacher changes? Can't take it anymore because you always learn something repetitive? Can&#39;t you waste any more time going around and making no progress? Do you want to find a systematic methodology with a complete material adapted to your level? COME LEARN CHINESE WITH US!",
+      "button": "GET STARTED!"
+    },
+    "children-course": {
+      "title": "Cursos de chino para niños",
+      "content": "Tenemos cursos para niños a partir de los 4 años, con o sin intención de preparar exámenes oficiales. El objetivo fundamental es convertir el estudio del chino en una gran diversión."
+    },
+    "adult-course": {
+      "title": "Cursos de chino para adultos",
+      "content": "Clases divertidas con nuestros profesores nativos con metodología adaptada tanto para principiantes como para aquellos que quieran preparar el HSK y el HSKK."
+    },
+    "intensive-course": {
+      "title": "Cursos INTENSIVOS de chino para exámenes YCT, HSK y HSKK.",
+      "content": "Calidad asegurada y efectiva. ¡No te lo puedes perder!"
+    },
+    "culture-course": {
+      "title": "Cursos de cultura china",
+      "content": "No tes puede llegar a aburrir ante tantas opciones: la medicina tradicional china, la historia, la caligrafía y todas las costumbres exóticas de una cultura milenaria."
+    },
+    "teachers": {
+      "hengli": {
+        "user": "hengli",
+        "title": "Hello, my name is Heng Li.",
+        "description": "I have been dedicated to teaching Chinese for almost 10 years and editing learning materials for both children and adults. One thing I can assure you: learning Chinese is not as difficult as you imagine! It is only a matter of systematic persistence as you would when learning any other language or how to lose weight, you have to look for suitable exercises and follow a diet. Well, my methodology for Chinese is the same. All I ask of you is your determination and to follow my instructions!"
+      },
+      "ningdan": {
+        "user": "ningdan",
+        "title": "Hello, my name is Ningdan.",
+        "description": "I am a Chinese teacher with 8 years teaching experience. I am responsible, patient, enthusiastic about my work, interested in continuing to expand my training, with a concern to motivate my students, always looking for the best for them and their future."
+      },
+      "jinglin": {
+        "user": "jinglin",
+        "title": "Hello, my name is Jing Lin.",
+        "description": "If you want to learn Chinese, my advice is: Take baby steps. Start a little bit today, continues a little bit tomorrow. We will start with the most basic elements if you are a beginner. My classes are designed to be fun and affective, so probably you wouldn't even notice that you are studying, two or three chilling hours per week with me and in three months you suddenly find out that you can already manage some basic conversations in Chinese. Next time when someone says: Chinese is the most difficult language in the world, you can prove him wrong with your fluent and exotic mandarin. That's the charm of baby steps, that's the charm of never stop learning."
+      }
+    }
+  },
+  "footer": {
+    "footer": "Footer"
+  }
+}

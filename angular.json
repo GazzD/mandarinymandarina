@@ -31,9 +31,27 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/plugins/bootstrap-4.3.1/css/bootstrap.min.css",
+              "src/assets/plugins/meanmenu/meanmenu.css",
+              "src/assets/plugins/slick-1.8.1/slick.css",
+              "src/assets/plugins/fancybox-master/jquery.fancybox.min.css",
+              "src/assets/plugins/aos-animation/aos.css",
+              "src/assets/fonts/ep-icon-fonts/css/style.css",
+              "src/assets/fonts/fontawesome-5/css/all.min.css",
+              "src/assets/css/settings.css",
+              "src/assets/css/style.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/plugins/jquery/jquery.min.js",
+              "src/assets/plugins/jquery/jquery-migrate.min.js",
+              "src/assets/plugins/bootstrap-4.3.1/js/bootstrap.bundle.js",
+              "src/assets/plugins/meanmenu/jquery.meanmenu.js",
+              "src/assets/plugins/slick-1.8.1/slick.min.js",
+              "src/assets/plugins/fancybox-master/jquery.fancybox.min.js",
+              "src/assets/plugins/aos-animation/aos.js",
+              "src/assets/js/active.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -127,5 +145,8 @@
       }
     }
   },
-  "defaultProject": "diversidiomas"
+  "defaultProject": "diversidiomas",
+  "cli": {
+    "analytics": "8b6b53f0-6956-41b8-a320-5116d0c2b57d"
+  }
 }
