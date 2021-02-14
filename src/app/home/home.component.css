@@ -1,0 +1,10 @@
+.course-accordion .course-card .acc-head-contents h3 {
+    background: rgba(0,0,0,.4);
+    padding: 0 1em;
+}
+.course-accordion .course-card .acc-head-contents p {
+    padding: 0.5em 1em;
+    color: #FFF;
+    font-weight: bold;
+    background: rgba(0,0,0,.4);
+}

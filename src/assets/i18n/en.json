@@ -15,20 +15,20 @@
       "button": "GET STARTED!"
     },
     "children-course": {
-      "title": "Cursos de chino para niños",
-      "content": "Tenemos cursos para niños a partir de los 4 años, con o sin intención de preparar exámenes oficiales. El objetivo fundamental es convertir el estudio del chino en una gran diversión."
+      "title": "Chinese courses for children",
+      "content": "We have courses for children from 4 years old, with or without the intention of preparing official exams. The main objective is to make studying Chinese into great fun."
     },
     "adult-course": {
-      "title": "Cursos de chino para adultos",
-      "content": "Clases divertidas con nuestros profesores nativos con metodología adaptada tanto para principiantes como para aquellos que quieran preparar el HSK y el HSKK."
+      "title": "Chinese courses for adults",
+      "content": "Fun classes with our native teachers with a methodology adapted for both beginners and those who want to prepare the HSK and HSKK."
     },
     "intensive-course": {
-      "title": "Cursos INTENSIVOS de chino para exámenes YCT, HSK y HSKK.",
-      "content": "Calidad asegurada y efectiva. ¡No te lo puedes perder!"
+      "title": "INTENSIVE Chinese courses for YCT, HSK and HSKK exams.",
+      "content": "Guaranteed and effective quality. You can not lose this!"
     },
     "culture-course": {
-      "title": "Cursos de cultura china",
-      "content": "No tes puede llegar a aburrir ante tantas opciones: la medicina tradicional china, la historia, la caligrafía y todas las costumbres exóticas de una cultura milenaria."
+      "title": "Chinese culture courses",
+      "content": "You can&#39;t get bored with so many options: traditional medicine China, history, calligraphy and all the exotic customs of a ancient culture."
     },
     "teachers": {
       "hengli": {
@@ -46,7 +46,15 @@
         "title": "Hello, my name is Jing Lin.",
         "description": "If you want to learn Chinese, my advice is: Take baby steps. Start a little bit today, continues a little bit tomorrow. We will start with the most basic elements if you are a beginner. My classes are designed to be fun and affective, so probably you wouldn't even notice that you are studying, two or three chilling hours per week with me and in three months you suddenly find out that you can already manage some basic conversations in Chinese. Next time when someone says: Chinese is the most difficult language in the world, you can prove him wrong with your fluent and exotic mandarin. That's the charm of baby steps, that's the charm of never stop learning."
       }
+    },
+    "testimonial": "Don’t believe me. Listen what’s my students are",
+    "testimonials": {
+      "first": "Are online class boring? No way! Look how great is the class and how happy he is!",
+      "second": "The classes are not only fun but with clear objetives! And of course, we always achieve these two goals!",
+      "third": "You wonder why we are able to do both? It is because all of our classes have steps to follow!",
+      "forth": "Calligraphy is difficult, boring and impossible? Come and listen our attravtive stories for each character and you will have a good time!"
     }
+
   },
   "footer": {
     "footer": "Footer"

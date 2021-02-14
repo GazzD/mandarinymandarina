@@ -37,7 +37,7 @@
   </div>
 
   <!-- Course section -->
-  <section class="course-section position-relative">
+  <section class="course-section position-relative" style="padding-top: 0;">
     <div class="shape-holder">
       <img src="./assets/image/section-2-shape-bg.svg" alt="">
     </div>
@@ -48,16 +48,8 @@
       <img src="./assets/image/course-yelloow-svg.svg" alt="">
     </div>
     <div class="container pt-lg--85">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="section-title section-black">
-            <h2>Clases personalizadas</h2>
-            <p>Aprender con mucho gusto</p>
-          </div>
-        </div>
-      </div>
       <div class="accordion course-accordion" id="accordionExample" >
-        <div class="card course-card"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <div class="card course-card"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d7/One_Laptop_Per_Child_-_Ulaanbaatar%2C_Mongolia_%28by%29.jpg); background-size: cover; background-position-y: -227px;">
           <div class="card-header" id="headingOne">
             <div class="row">
                 <div class="col-xl-6 col-lg-7">
@@ -66,15 +58,15 @@
                       <img src="./assets/image/course-acc-icon.svg" alt="">
                     </div>
                     <div class="acc-head-contents">
-                      <h3>{{ "home.children-course.title" | translate }}</h3>
-                      <p>{{ "home.children-course.content" | translate }}</p>
+                      <h3 style="text-shadow: 1px 1px white;">{{ "home.children-course.title" | translate }}</h3>
+                      <p style="text-shadow: 0 1px black;">{{ "home.children-course.content" | translate }}</p>
                     </div>
                   </div>
                 </div>
             </div>
           </div>
         </div>
-        <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="200">
+        <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="200" style="background-image: url(https://cdn.pixabay.com/photo/2020/04/20/20/56/people-looking-in-laptop-5069842_1280.jpg); background-position-y: -240px;">
           <div class="card-header" id="heading2">
             <div class="row">
                 <div class="col-lg-6">
@@ -83,8 +75,8 @@
                       <img src="./assets/image/course-acc-icon.svg" alt="">
                     </div>
                     <div class="acc-head-contents">
-                      <h3>{{ "home.adult-course.title" | translate }}</h3>
-                      <p>{{ "home.adult-course.content" | translate }}</p>
+                      <h3 style="text-shadow: 1px 1px white;">{{ "home.adult-course.title" | translate }}</h3>
+                      <p style="text-shadow: 0 1px black;" >{{ "home.adult-course.content" | translate }}</p>
                     </div>
                   </div>
                 </div>
@@ -102,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="400">
+        <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="400" style="background-image: url(https://cdn.pixabay.com/photo/2020/06/23/14/10/chinese-medicine-5332680_1280.jpg); background-position-y: -240px;">
           <div class="card-header" id="heading3">
             <div class="row">
                 <div class="col-lg-6">
@@ -111,15 +103,15 @@
                       <img src="./assets/image/course-acc-icon.svg" alt="">
                     </div>
                     <div class="acc-head-contents">
-                      <h3>{{ "home.intensive-course.title" | translate }}</h3>
-                      <p>{{ "home.intensive-course.content" | translate }}</p>
+                      <h3 style="text-shadow: 1px 1px white;">{{ "home.intensive-course.title" | translate }}</h3>
+                      <p style="text-shadow: 0 1px black;" >{{ "home.intensive-course.content" | translate }}</p>
                     </div>
                   </div>
                 </div>
             </div>
           </div>
         </div>
-        <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="600">
+        <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="600" style="background-image: url(https://losangelesbestwestern.com/wp-content/uploads/sites/13/2019/12/Chinese-Lantern-Festival.jpeg); background-position-y: -190px; background-size: cover;" >
           <div class="card-header" id="heading4">
             <div class="row">
                 <div class="col-lg-6">
@@ -128,8 +120,8 @@
                       <img src="./assets/image/course-acc-icon.svg" alt="">
                     </div>
                     <div class="acc-head-contents">
-                      <h3>{{ "home.culture-course.title" | translate }}</h3>
-                      <p>{{ "home.culture-course.content" | translate }}</p>
+                      <h3 style="text-shadow: 1px 1px white;">{{ "home.culture-course.title" | translate }}</h3>
+                      <p style="text-shadow: 0 1px black;" >{{ "home.culture-course.content" | translate }}</p>
                     </div>
                   </div>
                 </div>
@@ -155,6 +147,14 @@
             <span class="account">@{{ teacher.user }}</span>
             <h2>{{ "home.teachers."+teacher.user+".title" | translate }}</h2>
             <p>{{ "home.teachers."+teacher.user+".description" | translate }}</p>
+            <blockquote>
+              {{ teacher.quote1 }}
+              <cite>{{teacher.author1}}</cite>
+            </blockquote>
+            <blockquote *ngIf="teacher.quote2 != ''">
+              {{ teacher.quote2 }}
+              <cite>{{teacher.author2}}</cite>
+            </blockquote>
           </div>
         </div>
       </div>
@@ -165,28 +165,56 @@
   <!-- Testimonial Starts -->
   <section class="testimonial-section position-relative">
     <div class="container">
-        <div class="row">
-          <div class="col-lg-7 col-xl-6">
-            <h2>Don’t believe me. Listen what’s my students are</h2>
-          </div>
+      <div class="row">
+        <div class="col-lg-7 col-xl-6">
+          <!-- <h2>{{home.testimonial | translate}}</h2>-->
         </div>
-        <div class="testimonial-slider-wrapper">
-          <div class="slider-btns"></div>
-          <div class="testimonial-slider">
-            <div class="single-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" *ngFor="let testimonial of testimonials">
-              <div class="testimonial-card">
-                <div class="image">
-                  <img src="{{ testimonial.img }}" alt="{{ testimonial.name }}">
-                </div>
-                <div class="content">
-                  <h4>{{ testimonial.name }}</h4>
-                  <span class="d-block">{{ testimonial.description }}</span>
-                  <!-- <a class="video-play-trigger" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class="icon icon-triangle-right-17-2"></i></a> -->
-                </div>
+      </div>
+      <div class="testimonial-slider-wrapper">
+        <div class="slider-btns"></div>
+        <div class="testimonial-slider">
+          <div class="single-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <div class="testimonial-card">
+              <div class="image">
+                <img src="./assets/image/dude1.png" alt="">
+              </div>
+              <div class="content">
+                <span class="d-block">{{"home.testimonials.first"| translate}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="single-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <div class="testimonial-card">
+              <div class="image">
+                <img src="./assets/image/dude2.png" alt="">
+              </div>
+              <div class="content">
+                <span class="d-block">{{"home.testimonials.second"| translate}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="single-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <div class="testimonial-card">
+              <div class="image">
+                <img src="./assets/image/dude3.png" alt="">
+              </div>
+              <div class="content">
+                <span class="d-block">{{"home.testimonials.third"| translate}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="single-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <div class="testimonial-card">
+              <div class="image">
+                <img src="./assets/image/dude4.png" alt="">
+              </div>
+              <div class="content">
+                <span class="d-block">{{"home.testimonials.forth"| translate}}</span>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
     <div class="shape-holder testimonial-shape" data-aos="zoom-in-left" data-aos-once="true"><img src="./assets/image/testimonial-shape.svg" alt=""></div>
   </section>

@@ -47,9 +47,13 @@
         "description": "Si quieres aprender chino, mi consejo es: despacito, poquito a poco. Empiezas un poquitín hoy, continuas un pelín mañana. Empezaremos con los elementos más sencillos y básicos si eres un principiante. Mis clases están diseñadas a ser efectivas y divertidas, probablemente ni siquiera te darás cuenta de que estás estudiando. Dos o tres horas relajadas a la semana y dentro de tres meses te sorprendes de las conversaciones que puedes manejar. Próxima vez cuando alguien dice: Chino es el idioma más difícil del mundo, le probarás lo equivocado con tu mandarín fluido y exótico. Estos es el encanto de poquito a poco, esto es el encanto de seguir aprendiendo."
       }
     },
-    "faqs": [
-      { "question": "", "answer": "" }
-    ]
+    "testimonial": "Don’t believe me. Listen what’s my students are",
+    "testimonials": {
+        "first": "Las clases onlines son aburridos? Qué va! Mira qué bien pasa y qué contento es!",
+        "second": "Las clases no sólo son divertidos sino con objetivos claros! Y CLARO, siempre comseguimos LAS DOS COSAS!",
+        "third": "Te preguntas porqué somos capacez de hacer las dos cosas? Es porque todas nuestras clases están con pasos para seguir!",
+        "forth": "La caligrafía es dificíl, aburrida y imposible? Ven a escuchar nuestros cuentos atractivos para cada caracteres y pasarás bien!"
+    }
   },
   "footer": {
     "footer": "Futer"
