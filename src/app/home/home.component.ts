@@ -1,12 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  
+  backendUrl: string = 'http://127.0.0.1:8000/v1/'
+  newsletterForm: FormGroup
+  newsletterSent : boolean = false 
   teachers = [
     { "user": "hengli", "img": "./assets/image/liheng.png",
       "quote1": "Li lleva cuatro años dando clase a mi hija. Sus clases las lleva muy preparadas, se hacen amenas y son prácticas. Es una gran profesional, amable y responsable. Estamos muy contentos con ella y es de toda confianza.",
@@ -53,9 +58,32 @@ export class HomeComponent implements OnInit {
     { "question": "hengli", "answer": "" },
   ];
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+    this.newsletterForm = new FormGroup({})
+    
+   }
 
   ngOnInit(): void {
+    this.newsletterForm = new FormGroup({
+      'email': new FormControl(null,[Validators.required, Validators.email]),
+    })
   }
 
+  submitNewsletter(){
+    var data = {
+      "email":  this.newsletterForm.get('email')?.value,
+    } 
+    this.http.post(this.backendUrl + 'newsletter', data).subscribe(responseData =>{
+      console.log(responseData)
+      this.newsletterSent = true;
+    })
+  }
+
+  newsletterIsValid(name: string){
+    if(!this.newsletterForm.get(name)?.valid && this.newsletterForm.get(name)?.touched){
+      return true  
+    }
+    return false
+  }
+  
 }

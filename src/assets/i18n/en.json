@@ -53,16 +53,29 @@
       "second": "The classes are not only fun but with clear objetives! And of course, we always achieve these two goals!",
       "third": "You wonder why we are able to do both? It is because all of our classes have steps to follow!",
       "forth": "Calligraphy is difficult, boring and impossible? Come and listen our attravtive stories for each character and you will have a good time!"
-    }
+    },
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "description": "Subscribe to get lastest offers, news and events announcements. No spam in your inbox.",
+      "email": "Enter your email address",
+      "success": "Thanks for you suscription!"
+    },
   },
   "contact": {
     "title": "Contact",
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "button": "Send"
+    "button": "Send",
+    "errors": {
+      "name": "Name is required",
+      "email": "Enter a valid email",
+      "message": "Message is required"
+    },
+    "message-sent": "Thanks for putting in contact with us, we will contact you back soon"
   },
   "footer": {
     "footer": "Footer"
   }
+  
 }

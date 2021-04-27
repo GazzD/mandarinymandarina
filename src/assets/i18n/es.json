@@ -53,6 +53,12 @@
         "second": "Las clases no sólo son divertidos sino con objetivos claros! Y CLARO, siempre comseguimos LAS DOS COSAS!",
         "third": "Te preguntas porqué somos capacez de hacer las dos cosas? Es porque todas nuestras clases están con pasos para seguir!",
         "forth": "La caligrafía es dificíl, aburrida y imposible? Ven a escuchar nuestros cuentos atractivos para cada caracteres y pasarás bien!"
+    },
+    "newsletter": {
+      "title": "Suscríbete a nuestro boletín",
+      "description": "Suscríbase para recibir las últimas ofertas, noticias y anuncios de eventos. Sin spam en su bandeja de entrada.",
+      "email": "Ingrese su dirección de correo electrónico",
+      "success": "Thanks for you suscription!"
     }
   },
   "contact": {
@@ -60,9 +66,16 @@
     "name": "Nombre",
     "email": "Email",
     "message": "Mensaje",
-    "button": "Enviar"
+    "button": "Enviar",
+    "errors": {
+      "name": "El nombre es requerido",
+      "email": "Ingrese un correo electronico válido",
+      "message": "El mensaje es requerido"
+    },
+    "message-sent": "Gracias por ponerte en contacto con nosotros, te contactaremos de vuelta en breve."
   },
   "footer": {
     "footer": "Futer"
   }
+  
 }

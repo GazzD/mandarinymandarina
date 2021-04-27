@@ -1,21 +1,25 @@
 <!-- Contact Section -->
-<section class="faq-section position-relative">
+<section class="faq-section position-relative" id="contact">
   <div class="container">
     <!-- contact -->
     <div class="faq-accordion">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section-title"><h2>{{ "contact.title" | translate }}</h2></div>
-          <form action="">
+          <form [formGroup]="contactForm" (ngSubmit)="submit()">
             <div class="form-group">
               <div style="padding: 0.5em 1em;">
-                <input type="text" class="form-control" placeholder="{{ 'contact.name' | translate }}" />
+                <p *ngIf="contactSent" class="success-message"> {{ "contact.message-sent" | translate }}</p>
+                <input type="text" class="form-control" name="name" formControlName="name" placeholder="{{ 'contact.name' | translate }}" />
+                <span class="error-message" *ngIf="isValid('name')">{{ "contact.errors.name" | translate }} </span>
               </div>
               <div style="padding: 0.5em 1em;">
-                <input type="text" class="form-control" placeholder="{{ 'contact.email' | translate }}" />
+                <input type="text" class="form-control" name="email" formControlName="email" placeholder="{{ 'contact.email' | translate }}" />
+                <span class="error-message" *ngIf="isValid('email')">{{ "contact.errors.email" | translate }} </span>
               </div>
               <div style="padding: 0.5em 1em;">
-                <textarea class="form-control" placeholder="{{ 'contact.message' | translate }}"></textarea>
+                <textarea class="form-control" formControlName="message" name="message" placeholder="{{ 'contact.message' | translate }}"></textarea>
+                <span class="error-message" *ngIf="isValid('message')">{{ "contact.errors.message" | translate }} </span>
               </div>
               <div class="contact-btn"><button class="btn btn--orange btn--hover-shine">{{ "contact.button" | translate }}</button></div>
             </div>

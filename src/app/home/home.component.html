@@ -27,7 +27,7 @@
         <div class="col-xl-6 col-lg-6 col-md-5 col-12">
           <div class="hero-media">
             <img src="src/assets/image/hero.png" alt="">
-            <a class="video-play-trigger" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class="icon icon-triangle-right-17-2"></i></a>
+            <a class="video-play-trigger" data-fancybox href="https://youtu.be/tuBTRs4Alrs"><i class="icon icon-triangle-right-17-2"></i></a>
             <div class="media-shape animate-spin"><img src="src/assets/image/media-shape.png" alt=""></div>
           </div>
         </div>
@@ -37,7 +37,7 @@
   </div>
 
   <!-- Course section -->
-  <section class="course-section position-relative" style="padding-top: 0;">
+  <section id="courses" class="course-section position-relative" style="padding-top: 0;">
     <div class="shape-holder">
       <img src="./assets/image/section-2-shape-bg.svg" alt="">
     </div>
@@ -49,7 +49,7 @@
     </div>
     <div class="container pt-lg--85">
       <div class="accordion course-accordion" id="accordionExample" >
-        <div class="card course-card"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d7/One_Laptop_Per_Child_-_Ulaanbaatar%2C_Mongolia_%28by%29.jpg); background-size: cover; background-position-y: -227px;">
+        <div class="card course-card"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" style="background-image: url(./assets/image/dibujo1.jpg); background-size: cover; background-position-y: -99px;">
           <div class="card-header" id="headingOne">
             <div class="row">
                 <div class="col-xl-6 col-lg-7">
@@ -57,9 +57,11 @@
                     <div class="acc-icon">
                       <img src="./assets/image/course-acc-icon.svg" alt="">
                     </div>
-                    <div class="acc-head-contents">
+                    <div class="acc-head-contents" data-fancybox href="https://youtu.be/NXLczEhxSfY">
                       <h3 style="text-shadow: 1px 1px white;">{{ "home.children-course.title" | translate }}</h3>
-                      <p style="text-shadow: 0 1px black;">{{ "home.children-course.content" | translate }}</p>
+                      <p style="text-shadow: 0 1px black;">{{ "home.children-course.content" | translate }}
+                      </p>
+                      
                     </div>
                   </div>
                 </div>
@@ -74,7 +76,7 @@
                     <div class="acc-icon">
                       <img src="./assets/image/course-acc-icon.svg" alt="">
                     </div>
-                    <div class="acc-head-contents">
+                    <div class="acc-head-contents" data-fancybox href="https://www.youtube.com/watch?v=3eYdBDzNKxA">
                       <h3 style="text-shadow: 1px 1px white;">{{ "home.adult-course.title" | translate }}</h3>
                       <p style="text-shadow: 0 1px black;" >{{ "home.adult-course.content" | translate }}</p>
                     </div>
@@ -102,7 +104,7 @@
                     <div class="acc-icon">
                       <img src="./assets/image/course-acc-icon.svg" alt="">
                     </div>
-                    <div class="acc-head-contents">
+                    <div class="acc-head-contents" data-fancybox href="https://youtu.be/zVT9J-1r66I">
                       <h3 style="text-shadow: 1px 1px white;">{{ "home.intensive-course.title" | translate }}</h3>
                       <p style="text-shadow: 0 1px black;" >{{ "home.intensive-course.content" | translate }}</p>
                     </div>
@@ -111,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="600" style="background-image: url(https://losangelesbestwestern.com/wp-content/uploads/sites/13/2019/12/Chinese-Lantern-Festival.jpeg); background-position-y: -190px; background-size: cover;" >
+        <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="600" style="background-image: url(./assets/image/dibujo4.jpg);     background-position-y: -377px; background-position-x: 268px; background-size: cover;" >
           <div class="card-header" id="heading4">
             <div class="row">
                 <div class="col-lg-6">
@@ -133,7 +135,7 @@
   </section>
 
   <!-- Aurthor Starts -->
-  <div class="aurthor-section" *ngFor="let teacher of teachers">
+  <div class="aurthor-section" id="teachers" *ngFor="let teacher of teachers">
     <div class="container">
       <div class="row  spacing-bottom mb--10">
         <div class=" col-lg-5 col-md-4" data-aos="zoom-in-right"  data-aos-once="true" data-aos-delay="55" data-aos-duration="1500">
@@ -163,7 +165,7 @@
   </div>
 
   <!-- Testimonial Starts -->
-  <section class="testimonial-section position-relative">
+  <section id="resources" class="testimonial-section position-relative">
     <div class="container">
       <div class="row">
         <div class="col-lg-7 col-xl-6">
@@ -226,21 +228,24 @@
     <div class="container margin-decrese">
         <span class="section-devider mt--130"></span>
         <div class="row mt--70">
-            <div class="col-lg-12 col-xl-12 col-margin">
-              <div class="ft-newsletter-box">
-                  <span class="ft-title-sm">Subscribe to our newsletter</span>
-                  <p>Subscribe to get lastest offers, news and events announcements. No spam in your inbox.</p>
-                  <form action="">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Enter your email address">
-                      <button class="submit-btn"><i class="icon icon-tail-right"></i></button>
-                    </div>
-                  </form>
-              </div>
+          <div class="col-lg-12 col-xl-12 col-margin">
+            <div class="ft-newsletter-box">
+                <span class="ft-title-sm">{{ "home.newsletter.title" | translate }}</span>
+                <p>{{ "home.newsletter.description" | translate }}</p>
+                <form [formGroup]="newsletterForm">
+                  <div class="form-group">
+                    <input type="text" formControlName="email" class="form-control" name="newsletterEmail"  placeholder="{{ 'home.newsletter.email' | translate }}">
+                    <span class="error-message" *ngIf="newsletterIsValid('email')">{{ "contact.errors.email" | translate }} </span>
+                    <button class="submit-btn newsletter-btn"><i class="icon icon-tail-right"></i></button>
+                  </div>
+                </form>
+                <p *ngIf="newsletterSent">{{"home.newsletter.success" | translate}}</p>
             </div>
           </div>
+        </div>
     </div>
     <div class="shape-holder footer-shape-1" data-aos="zoom-in-left" data-aos-once="true"><img src="./assets/image/cta-shape.svg" alt=""></div>
     <div class="shape-holder footer-shape-2" data-aos="zoom-in-right" data-aos-once="true"><img src="./assets/image/footer-shape.svg" alt=""></div>
   </div>
+  
 </div>
