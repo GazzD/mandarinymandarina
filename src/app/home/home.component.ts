@@ -8,14 +8,14 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  
+
   backendUrl: string = 'http://127.0.0.1:8000/v1/'
   newsletterForm: FormGroup
-  newsletterSent : boolean = false 
+  newsletterSent : boolean = false
   teachers = [
     { "user": "hengli", "img": "./assets/image/liheng.png",
       "quote1": "Li lleva cuatro años dando clase a mi hija. Sus clases las lleva muy preparadas, se hacen amenas y son prácticas. Es una gran profesional, amable y responsable. Estamos muy contentos con ella y es de toda confianza.",
-      "author1": "------José M. García",
+      "author1": "------ José M. García",
       "quote2": `Mi hija lleva recibiendo clase con Heng cinco años y estamos encantadas. Heng traza unos
       objetivos a lograr cada curso y prepara cada clase a conciencia, adaptándose a la capacidad de
       concentración del niño, buscando actividades amenas y siendo tan cariñosa como exigente.
@@ -27,12 +27,12 @@ export class HomeComponent implements OnInit {
       Destacaría también su capacidad para motivar al alumno y su flexibilidad cuando hemos
       necesitado algún cambio.
       ¡Gracias, Heng!`,
-      "author2": "-----Begoña Díaz"
+      "author2": "----- Begoña Díaz"
     },
     { "user": "ningdan", "img": "./assets/image/ningdan.png",
       "quote1": `Hola, me llamo Gabriel y mi profesora de chino es Ning Dan. Me encanta dar clase con ella
       porque hace las clases divertidas y explica muy bien.`,
-      "author1": "-----Gabriel",
+      "author1": "----- Gabriel",
       "quote2": ``,
       "author2": ""
     },
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private http: HttpClient) {
     this.newsletterForm = new FormGroup({})
-    
+
    }
 
   ngOnInit(): void {
@@ -72,7 +72,7 @@ export class HomeComponent implements OnInit {
   submitNewsletter(){
     var data = {
       "email":  this.newsletterForm.get('email')?.value,
-    } 
+    }
     this.http.post(this.backendUrl + 'newsletter', data).subscribe(responseData =>{
       console.log(responseData)
       this.newsletterSent = true;
@@ -81,9 +81,9 @@ export class HomeComponent implements OnInit {
 
   newsletterIsValid(name: string){
     if(!this.newsletterForm.get(name)?.valid && this.newsletterForm.get(name)?.touched){
-      return true  
+      return true
     }
     return false
   }
-  
+
 }
