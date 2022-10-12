@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { CommunicationAPIService } from 'src/app/services/communication-api.service';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +10,9 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
 
-  backendUrl: string = 'http://127.0.0.1:8000/v1/'
-  newsletterForm: FormGroup
-  newsletterSent : boolean = false
+  newsletterForm: FormGroup;
+  emailInput: FormControl = new FormControl(null,[Validators.required,Validators.email]);
+  newsletterSent: boolean = false;
   teachers = [
     { "user": "hengli", "img": "./assets/image/liheng.png",
       "quote1": "Li lleva cuatro años dando clase a mi hija. Sus clases las lleva muy preparadas, se hacen amenas y son prácticas. Es una gran profesional, amable y responsable. Estamos muy contentos con ella y es de toda confianza.",
@@ -58,25 +59,28 @@ export class HomeComponent implements OnInit {
     { "question": "hengli", "answer": "" },
   ];
 
-  constructor(private http: HttpClient) {
-    this.newsletterForm = new FormGroup({})
+  constructor(private communicationAPIService: CommunicationAPIService) {
+
+    this.newsletterForm = new FormGroup({
+      'email': this.emailInput,
+    });
 
    }
 
   ngOnInit(): void {
-    this.newsletterForm = new FormGroup({
-      'email': new FormControl(null,[Validators.required, Validators.email]),
-    })
+    
   }
 
   submitNewsletter(){
-    var data = {
-      "email":  this.newsletterForm.get('email')?.value,
+    const data = {
+      "email":  this.emailInput.value,
     }
-    this.http.post(this.backendUrl + 'newsletter', data).subscribe(responseData =>{
-      console.log(responseData)
-      this.newsletterSent = true;
-    })
+
+    this.communicationAPIService.sendNewsletter(data).subscribe(
+      (response) => {
+        this.newsletterSent = true;
+      }
+    )
   }
 
   newsletterIsValid(name: string){

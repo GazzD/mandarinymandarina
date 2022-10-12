@@ -9,10 +9,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({

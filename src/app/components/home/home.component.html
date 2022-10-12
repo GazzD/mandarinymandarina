@@ -231,11 +231,11 @@
             <div class="ft-newsletter-box">
                 <span class="ft-title-sm">{{ "home.newsletter.title" | translate }}</span>
                 <p>{{ "home.newsletter.description" | translate }}</p>
-                <form [formGroup]="newsletterForm">
+                <form [formGroup]="newsletterForm" (ngSubmit)="submitNewsletter()">
                   <div class="form-group">
                     <input type="text" formControlName="email" class="form-control" name="newsletterEmail"  placeholder="{{ 'home.newsletter.email' | translate }}">
                     <span class="error-message" *ngIf="newsletterIsValid('email')">{{ "contact.errors.email" | translate }} </span>
-                    <button class="submit-btn newsletter-btn"><i class="icon icon-tail-right"></i></button>
+                    <button class="submit-btn newsletter-btn" [disabled]="newsletterForm.invalid"><i class="icon icon-tail-right"></i></button>
                   </div>
                 </form>
                 <p *ngIf="newsletterSent">{{"home.newsletter.success" | translate}}</p>

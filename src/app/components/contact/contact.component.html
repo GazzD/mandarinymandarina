@@ -6,7 +6,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section-title"><h2>{{ "contact.title" | translate }}</h2></div>
-          <form [formGroup]="contactForm" (ngSubmit)="submit()">
+          <form [formGroup]="contactForm" (ngSubmit)="sendContact()">
             <div class="form-group">
               <div style="padding: 0.5em 1em;">
                 <p *ngIf="contactSent" class="success-message"> {{ "contact.message-sent" | translate }}</p>
@@ -21,7 +21,7 @@
                 <textarea class="form-control" formControlName="message" name="message" placeholder="{{ 'contact.message' | translate }}"></textarea>
                 <span class="error-message" *ngIf="isValid('message')">{{ "contact.errors.message" | translate }} </span>
               </div>
-              <div class="contact-btn"><button class="btn btn--orange btn--hover-shine">{{ "contact.button" | translate }}</button></div>
+              <div class="contact-btn"><button [disabled]="contactForm.invalid" class="btn btn--orange btn--hover-shine">{{ "contact.button" | translate }}</button></div>
             </div>
           </form>
         </div>
