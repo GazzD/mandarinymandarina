@@ -75,7 +75,7 @@ export class HomeComponent implements OnInit {
     const data = {
       "email":  this.emailInput.value,
     }
-
+    this.newsletterForm.reset();
     this.communicationAPIService.sendNewsletter(data).subscribe(
       (response) => {
         this.newsletterSent = true;

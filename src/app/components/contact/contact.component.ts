@@ -40,10 +40,9 @@ export class ContactComponent implements OnInit {
       "email":  this.emailInput.value,
       "message": this.messageInput.value
     }
-
+    this.contactForm.reset();
     this.communicationAPIService.sendContact(data).subscribe(responseData => {
       this.contactSent = true;
-      this.contactForm.reset();
     });
 
   }
